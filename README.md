@@ -1,6 +1,5 @@
 # Wejapa-team-javascript-c
 Calculator app with  scientific functions
-# Store Manager - Team 1
 
 Welcome to master branch
 
