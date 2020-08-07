@@ -1,9 +1,13 @@
 let display = document.getElementById("outputs");
 let buttons = document.getElementsByClassName("button");
+let lastAnswer = 0;
   
   Array.prototype.forEach.call(buttons, function(button) {
   button.addEventListener("click", function() {
-    if (button.textContent != "=" && 
+    
+    if(button.textContent == 0 && display.innerHTML == 0){
+      display.innerHTML = 0
+    }else if (button.textContent != "=" && 
     button.textContent != "AC" && 
     button.textContent != "x" && 
     button.textContent != "÷" && 
@@ -21,7 +25,7 @@ let buttons = document.getElementsByClassName("button");
     button.textContent != "π" && 
     button.textContent != "e" &&
     button.textContent != "DEL" &&
-    button.textContent != "Ans" && 
+    button.textContent != "Ans" &&
     button.textContent != "mod" &&
     button.textContent != "rad" 
     && button.textContent != "∘") {
@@ -72,9 +76,9 @@ let buttons = document.getElementsByClassName("button");
     else if (button.textContent === "DEL") {
       deleteLast();
     }
-    /*else if (button.textContent === "Ans") {
+    else if (button.textContent === "Ans") {
       answer();
-    }*/
+    }
   });
 });
 
@@ -87,6 +91,7 @@ function syntaxError() {
 
 
 function equals() {
+
   if ((display.innerHTML).indexOf("^") > -1) {
     var base = (display.innerHTML).slice(0, (display.innerHTML).indexOf("^"));
     var exponent = (display.innerHTML).slice((display.innerHTML).indexOf("^") + 1);
@@ -96,6 +101,8 @@ function equals() {
     checkLength()
     syntaxError()
   }
+
+  lastAnswer = display.innerHTML;
 }
 
 function clear() {
@@ -195,4 +202,8 @@ function deleteLast() {
 
 function modulus(){
   display.innerHTML += "%";
+}
+
+function answer(){
+  display.innerHTML = lastAnswer;
 }
