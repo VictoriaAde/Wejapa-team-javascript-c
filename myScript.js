@@ -101,10 +101,6 @@ function clear() {
   display.innerHTML = 0;
 }
 
-function backspace() {
-  display.innerHTML = display.innerHTML.substring(0, display.innerHTML.length - 1);
-}
-
 function multiply() {
   display.innerHTML += "*";
 }
