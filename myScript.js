@@ -43,7 +43,7 @@ let buttons = document.getElementsByClassName("button");
       percent();
     } else if (button.textContent === "π") {
       pi();
-    } else if (button.textContent === "x ²") {
+    } else if (button.textContent === "x²") {
       square();
     } else if (button.textContent === "√") {
       squareRoot();
@@ -59,7 +59,7 @@ let buttons = document.getElementsByClassName("button");
       ln();
     } else if (button.textContent === "x^") {
       exponent();
-    } else if (button.textContent === "x !") {
+    } else if (button.textContent === "x!") {
       factorial();
     } else if (button.textContent === "e") {
       exp();
