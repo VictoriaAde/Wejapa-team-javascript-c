@@ -32,6 +32,8 @@ let buttons = document.getElementsByClassName("button");
       clear();
     } else if (button.textContent === "x") {
       multiply();
+    } else if (button.textContent === "mod") {
+      modulus();
     } else if (button.textContent === "÷") {
       divide();
     } else if (button.textContent === "±") {
@@ -189,4 +191,8 @@ function deleteLast() {
   }else{
     display.innerHTML = display.innerHTML.slice(0, -1);
   }
+}
+
+function modulus(){
+  display.innerHTML += "%";
 }
