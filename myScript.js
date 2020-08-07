@@ -14,6 +14,7 @@ let lastAnswer = 0;
     button.textContent != "√" && 
     button.textContent != "x²" && 
     button.textContent != "%" && 
+    button.textContent != "<=" && 
     button.textContent != "±" && 
     button.textContent != "sin" && 
     button.textContent != "cos" && 
