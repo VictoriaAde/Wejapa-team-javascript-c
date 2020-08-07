@@ -10,7 +10,6 @@ let buttons = document.getElementsByClassName("button");
     button.textContent != "√" && 
     button.textContent != "x²" && 
     button.textContent != "%" && 
-    button.textContent != "<=" && 
     button.textContent != "±" && 
     button.textContent != "sin" && 
     button.textContent != "cos" && 
