@@ -8,7 +8,7 @@ let buttons = document.getElementsByClassName("button");
     button.textContent != "x" && 
     button.textContent != "÷" && 
     button.textContent != "√" && 
-    button.textContent != "x ²" && 
+    button.textContent != "x²" && 
     button.textContent != "%" && 
     button.textContent != "<=" && 
     button.textContent != "±" && 
@@ -18,7 +18,7 @@ let buttons = document.getElementsByClassName("button");
     button.textContent != "log" && 
     button.textContent != "ln" && 
     button.textContent != "x^" && 
-    button.textContent != "x !" && 
+    button.textContent != "x!" && 
     button.textContent != "π" && 
     button.textContent != "e" &&
     button.textContent != "DEL" &&
