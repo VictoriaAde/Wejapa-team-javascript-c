@@ -189,14 +189,9 @@ function degrees() {
 }
 
 function deleteLast() {
-  if(display.innerHTML.length === 1 || display.innerHTML === 0){
-    display.innerHTML === 0;
+  if(display.innerHTML.length === 1){
+    display.innerHTML = 0;
   }else{
     display.innerHTML = display.innerHTML.slice(0, -1);
   }
-}
-
-//Yet to implement
-function answer() {
-
 }
