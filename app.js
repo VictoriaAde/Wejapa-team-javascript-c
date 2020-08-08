@@ -89,6 +89,7 @@ start.addEventListener('click', () => {
 equal.addEventListener('click', () => {
 	newExpression = '';
 	let output = result.textContent;
+
 	//Add right parentheses if it is less than left parentheses
 	for (let i = 0; i < output.split('(').length - output.split(')').length; i++) {
 		output += ')';
@@ -106,6 +107,7 @@ equal.addEventListener('click', () => {
 	} else {
 		result.textContent = eval(output);
 	}
+	errorChecker();
 	previousAnswer = result.textContent;
 });
 
@@ -139,19 +141,23 @@ function trigonometry(element) {
 		trigoFunction = Math.cos;
 	}
 	result.textContent = trigoFunction(result.textContent * Math.PI / 180.0).toFixed(10);
+	errorChecker();
 	previousAnswer = result.textContent;
 }
 
 function log() {
 	result.textContent = Math.log10(result.textContent).toFixed(10);
+	errorChecker();
 	previousAnswer = result.textContent;
 }
 function squareRoot() {
 	result.textContent = Math.sqrt(result.textContent);
+	errorChecker();
 	previousAnswer = result.textContent;
 }
 function square() {
 	result.textContent = result.textContent * result.textContent;
+	errorChecker();
 	previousAnswer = result.textContent;
 }
 function factorial() {
@@ -175,6 +181,7 @@ function factorial() {
 	} else {
 		result.textContent = factorialResult;
 	}
+	errorChecker();
 	previousAnswer = result.textContent;
 }
 function pi() {
@@ -183,10 +190,12 @@ function pi() {
 	} else {
 		result.textContent = Math.PI * result.textContent;
 	}
+	errorChecker();
 	previousAnswer = result.textContent;
 }
 function percent() {
 	result.textContent = result.textContent / 100;
+	errorChecker();
 	previousAnswer = result.textContent;
 }
 function plusMinus() {
@@ -194,5 +203,11 @@ function plusMinus() {
 		result.textContent = result.textContent.splice(1);
 	} else {
 		result.textContent = '-' + result.textContent;
+	}
+}
+
+function errorChecker(){
+	if(isNaN(result.textContent) || result.textContent === "Infinity" || result.textContent.length === 0){
+		result.textContent = "syntax error";
 	}
 }
