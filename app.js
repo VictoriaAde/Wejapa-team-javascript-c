@@ -206,8 +206,9 @@ function plusMinus() {
 	}
 }
 
-function errorChecker(){
-	if(isNaN(result.textContent) || result.textContent === "Infinity" || result.textContent.length === 0){
-		result.textContent = "syntax error";
+function errorChecker() {
+	if (isNaN(result.textContent) || result.textContent === 'Infinity' || result.textContent.length === 0) {
+		result.textContent = 'syntax error';
+		previousAnswer = '0';
 	}
 }
