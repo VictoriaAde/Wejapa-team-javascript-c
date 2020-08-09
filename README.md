@@ -66,5 +66,34 @@ When making a PR, your PR is expected to have the following:
 **ScreenShots**
 Screenshots are needed for all PR
 
+-------------------------------------------
+
+**Calculator Functionalities**
+
+This scientic calculator has 5 functions based on the button type selected:
+1. Number
+    - 0 - 9
+
+2. Operator
+    - +, -, /, *, **, %
+
+3. Math function / complex-operator
+    - sin, cos, tan, log, e, √, x², x!, x^, π
+
+4. Key
+    - (, ), Del, Ac, Ans
+
+5. Calculate
+    - =
+
+Eg:
+Mod === Modulus (finding remainder)
+    - 3 % 2 gives 1
+
+√ === Square root 
+    - √ 16 gives 4
+
+π === Pi 
+    - π gives 3.14
 
 Gracias and Happy Coding !!!
