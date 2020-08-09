@@ -96,4 +96,9 @@ Mod === Modulus (finding remainder)
 π === Pi 
     - π gives 3.14
 
+x! === Factorial
+    - 5! gives 120
+
+Etc...
+
 Gracias and Happy Coding !!!
