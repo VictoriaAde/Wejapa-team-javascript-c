@@ -70,34 +70,64 @@ Screenshots are needed for all PR
 
 **Calculator Functionalities**
 
-This scientic calculator has 5 functions based on the button type selected:
-1. Number
+This scientic calculator has buttons with different functions based on the selected button:
+
+1. Numbers:
+
     - 0 - 9
 
-2. Operator
-    - +, -, /, *, **, %
+2. Operators:
 
-3. Math function / complex-operator
-    - sin, cos, tan, log, e, √, x², x!, x^, π
+    - +,  
+    - -,  
+    - /,  
+    - *,  
+    - **,  
+    - %
 
-4. Key
-    - (, ), Del, Ac, Ans
+3. Math functions / complex operators:
 
-5. Calculate
+    - sin, 
+    - cos, 
+    - tan, 
+    - log, 
+    - e, 
+    - √, 
+    - x², 
+    - x!, 
+    - x^, 
+    - π
+
+4. Other Keys:
+    - ( ),
+    - Del, 
+    - AC, 
+    - Ans,
     - =
 
 Eg:
-Mod === Modulus (finding remainder)
+
+Mod === Modulus (gives the remainder after a division operation is carried out)
+
     - 3 % 2 gives 1
 
+    
+
 √ === Square root 
+    
     - √ 16 gives 4
 
+
+
 π === Pi 
-    - π gives 3.14
+    
+    - π gives 3.
+    
+
 
 x! === Factorial
-    - 5! gives 120
+    
+    - 5! gives 120 (i.e 5 * 4 * 3 * 2 * 1 = 120)
 
 Etc...
 
